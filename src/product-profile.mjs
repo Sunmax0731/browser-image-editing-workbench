@@ -1,0 +1,32 @@
+export const productProfile = {
+  "repository": "browser-image-editing-workbench",
+  "title": "ブラウザ画像編集ワークベンチ",
+  "domain": "WebApp",
+  "hostApp": null,
+  "rank": 73,
+  "tier": "P2",
+  "ideaNo": 11,
+  "overview": "画像を読み込み、レイヤー、選択範囲、切り抜き、リサイズ、回転、色調補正、フィルタ、ブラシ、消しゴム、テキスト、透過保持、履歴管理をブラウザ上で扱う。Photoshop的な基本操作を軽量なWebツールとして提供し、編集後のPNG、WebP、JPEGを書き出す。",
+  "problem": "ちょっとした画像編集のために重いデスクトップアプリを起動する必要があり、透過や書き出し設定も用途ごとに確認しづらい。",
+  "differentiation": "ローカルファイル中心の軽量編集に絞り、透過、履歴、書き出しプリセットを個人制作向けにまとめる。",
+  "publish": "GitHub Pages / GitHub Release",
+  "surface": "Static WebApp + CLI validation core",
+  "entity": "image edit job",
+  "requiredFields": [
+    "id",
+    "title",
+    "imagePath",
+    "operation",
+    "exportFormat",
+    "owner"
+  ],
+  "warningField": "nonDestructiveNote",
+  "qcdsManualTestCap": "S-",
+  "qcdsTarget": "A-",
+  "benchmarkRepos": [
+    "Sunmax0731/project-portfolio-generator",
+    "Sunmax0731/release-output-check-flow",
+    "Sunmax0731/movie-telop-transcriber",
+    "Sunmax0731/codex-remote-android"
+  ]
+};

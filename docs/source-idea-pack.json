@@ -1,0 +1,66 @@
+{
+  "rank": 73,
+  "domain": "WebApp",
+  "ideaNo": 11,
+  "ideaName": "ブラウザ画像編集ワークベンチ",
+  "repository": "browser-image-editing-workbench",
+  "publish": "GitHub Pages / GitHub Release",
+  "createdIdeaLookup": {
+    "exactPathFirst": "D:/AI/WebApp/created_idea_011_browser-image-editing-workbench",
+    "exactPathExists": true,
+    "fallbackSearched": false,
+    "fallbackResults": [],
+    "notes": "完全一致の created_idea と ZIP を使用した。"
+  },
+  "zipLookup": {
+    "exactZip": "D:/AI/WebApp/created_idea_011_browser-image-editing-workbench/idea_011_browser-image-editing-workbench.zip",
+    "exactZipExists": true,
+    "requiredFiles": [
+      "metadata.json",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md"
+    ],
+    "missingRequiredFiles": []
+  },
+  "zipMetadata": {
+    "domain": "WebApp",
+    "no": 11,
+    "platform": "WebApp",
+    "field": "画像編集",
+    "integration": "",
+    "idea": "ブラウザ画像編集ワークベンチ",
+    "overview": "画像を読み込み、レイヤー、選択範囲、切り抜き、リサイズ、回転、色調補正、フィルタ、ブラシ、消しゴム、テキスト、透過保持、履歴管理をブラウザ上で扱う。Photoshop的な基本操作を軽量なWebツールとして提供し、編集後のPNG、WebP、JPEGを書き出す。",
+    "problem": "ちょっとした画像編集のために重いデスクトップアプリを起動する必要があり、透過や書き出し設定も用途ごとに確認しづらい。",
+    "similar": "Photopea, Pixlr, Canva, Figma, Photoshop Web",
+    "diff": "ローカルファイル中心の軽量編集に絞り、透過、履歴、書き出しプリセットを個人制作向けにまとめる。",
+    "parent": "Apps",
+    "startPromptFile": "START_PROMPT.md",
+    "documents": [
+      "START_PROMPT.md",
+      "README.md",
+      "01_REQUIREMENTS.md",
+      "02_SPECIFICATION.md",
+      "03_DESIGN.md",
+      "04_IMPLEMENTATION_PLAN.md",
+      "05_TEST_PLAN.md",
+      "06_RELEASE_CHECKLIST.md",
+      "metadata.json"
+    ],
+    "repositoryName": "browser-image-editing-workbench",
+    "repositoryTitle": "browser-image-editing-workbench",
+    "zipFile": "idea_011_browser-image-editing-workbench.zip"
+  },
+  "metadataRepositoryMatches": true,
+  "metadataZipMatches": true,
+  "initialRepositoryReadme": {
+    "existedBeforeCreation": false,
+    "note": "正式 repo が存在しなかったため README.md は存在しないと記録し、domain docs と created_idea ZIP を根拠に作成した。"
+  },
+  "mojibakePolicy": "ZIP本文や既存Markdownは丸写しせず、PICKUP行、metadata、domain docsから正式docsを再構成する。",
+  "unstableEvidencePolicy": "ZIPサイズ、生成時刻、絶対一時パスはQCDS固定根拠に使わない。"
+}
