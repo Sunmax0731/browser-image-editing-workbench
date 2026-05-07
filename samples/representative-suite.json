@@ -1,0 +1,120 @@
+[
+  {
+    "id": "happy-path",
+    "purpose": "ブラウザ画像編集ワークベンチ の正常入力を検証する",
+    "items": [
+      {
+        "id": "browser-image-editing-workbench-happy",
+        "title": "ブラウザ画像編集ワークベンチ happy",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "imagePath": "samples/happy.png",
+        "operation": "validate",
+        "exportFormat": "png",
+        "owner": "closed-alpha",
+        "nonDestructiveNote": "ブラウザ画像編集ワークベンチ の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "passed",
+      "errors": 0,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "missing-required",
+    "purpose": "必須項目不足を error として検出する",
+    "items": [
+      {
+        "id": "browser-image-editing-workbench-missing",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "imagePath": "samples/missing.png",
+        "operation": "validate",
+        "exportFormat": "png",
+        "owner": "closed-alpha",
+        "nonDestructiveNote": "ブラウザ画像編集ワークベンチ の確認観点"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 0
+    }
+  },
+  {
+    "id": "warning",
+    "purpose": "推奨項目不足を warning として検出する",
+    "items": [
+      {
+        "id": "browser-image-editing-workbench-warning",
+        "title": "ブラウザ画像編集ワークベンチ warning",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "imagePath": "samples/warning.png",
+        "operation": "validate",
+        "exportFormat": "png",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "warning",
+      "errors": 0,
+      "warnings": 1
+    }
+  },
+  {
+    "id": "mixed-batch",
+    "purpose": "正常、必須不足、警告を同一バッチで集計する",
+    "items": [
+      {
+        "id": "browser-image-editing-workbench-happy",
+        "title": "ブラウザ画像編集ワークベンチ happy",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "imagePath": "samples/happy.png",
+        "operation": "validate",
+        "exportFormat": "png",
+        "owner": "closed-alpha",
+        "nonDestructiveNote": "ブラウザ画像編集ワークベンチ の確認観点"
+      },
+      {
+        "id": "browser-image-editing-workbench-missing",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "imagePath": "samples/missing.png",
+        "operation": "validate",
+        "exportFormat": "png",
+        "owner": "closed-alpha",
+        "nonDestructiveNote": "ブラウザ画像編集ワークベンチ の確認観点"
+      },
+      {
+        "id": "browser-image-editing-workbench-warning",
+        "title": "ブラウザ画像編集ワークベンチ warning",
+        "status": "ready",
+        "tags": [
+          "webapp"
+        ],
+        "imagePath": "samples/warning.png",
+        "operation": "validate",
+        "exportFormat": "png",
+        "owner": "closed-alpha"
+      }
+    ],
+    "expected": {
+      "result": "failed",
+      "errors": 1,
+      "warnings": 1
+    }
+  }
+]
