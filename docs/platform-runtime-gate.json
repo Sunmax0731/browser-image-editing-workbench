@@ -1,0 +1,13 @@
+{
+  "product": "browser-image-editing-workbench",
+  "title": "ブラウザ画像編集ワークベンチ",
+  "domain": "WebApp",
+  "ideaNo": 11,
+  "platformType": "browser-web",
+  "expectedPublicTarget": "GitHub Pages / GitHub Release",
+  "browser": {
+    "evidence": "dist/web-smoke-result.json"
+  },
+  "android": null,
+  "evidence": "dist/platform-runtime-gate-result.json"
+}
